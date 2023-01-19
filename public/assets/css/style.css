@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
 }
 
 .row{
@@ -43,12 +45,14 @@
 }
 
 h1{
+    font-family: 'Courgette', cursive;
     font-size: 4em;
     letter-spacing: 10px;
 }
 h2{
+    font-family: 'Courgette', cursive;
     font-size: 2em;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
 }
 
 .loader{
