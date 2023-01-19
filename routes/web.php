@@ -22,11 +22,11 @@ Route::get('migrate',function(){
     Artisan::call('migrate', ['--force' => true]);
 });
 
-Route::get('rollback',function(){
+Route::get('/rollback',function(){
     Artisan::call('migrate:rollback', ['--force' => true]);
  });
 
- Route::get('reboot',function(){
+ Route::get('/reboot',function(){
     Artisan::call('view:clear', ['--force' => true]);
     Artisan::call('route:clear', ['--force' => true]);
     Artisan::call('config:clear', ['--force' => true]);
@@ -34,6 +34,6 @@ Route::get('rollback',function(){
     Artisan::call('key:generate', ['--force' => true]);
   });
 
-  Route::get('seed', function(){
+  Route::get('/seed', function(){
     Artisan::call('db:seed', array('--class' => 'PermissionsAssign', '--force' => true));
   });
