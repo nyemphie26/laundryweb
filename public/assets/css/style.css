@@ -22,7 +22,7 @@
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    height: 75vh;
+    min-height: 75vh;
 }
 
 .header{
@@ -35,13 +35,13 @@
 .sectionBanner{
     background-color:#8cc63f;
     width: 100%;
-    height: 75vh;
+    /* height: 75vh; */
 }
 
 .section{
     background-color: lightgrey;
     width: 100%;
-    height: 100vh;
+    /* height: 100%; */
 }
 
 h1{
@@ -53,6 +53,30 @@ h2{
     font-family: 'Courgette', cursive;
     font-size: 2em;
     letter-spacing: 5px;
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+    h1{
+        font-family: 'Courgette', cursive;
+        font-size: 3em;
+        letter-spacing: 5px;
+    }
+    h2{
+        font-family: 'Courgette', cursive;
+        font-size: 1.5em;
+    }
+  }
+
+.footer a:link{
+    text-decoration: none;
+}
+.social-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .loader{
@@ -98,3 +122,4 @@ h2{
         transform: scale(3);
     }
 }
+
