@@ -25,6 +25,7 @@
       const myTimeout = setTimeout(myGreeting, 500);
       
         window.onscroll = function() {scrollFunction()};
+        window.addEventListener('scroll', reveal);
         
         
         function myGreeting() {
@@ -54,6 +55,23 @@
             navLink.forEach((element) => {
               element.classList.add('text-white');
             });
+          }
+        }
+
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+
+          for (let i = 0; i < reveals.length; i++) {
+            var winHeight = window.innerHeight;
+            var revTop = reveals[i].getBoundingClientRect().top;
+            var revPoint = 75;
+
+            if (revTop < winHeight - revPoint) {
+              reveals[i].classList.add('active');
+            }
+            else{
+              reveals[i].classList.remove('active');
+            }
           }
         }
     </script>
