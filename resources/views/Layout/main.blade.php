@@ -42,7 +42,7 @@
             document.getElementById("navContainer").classList.add("mt-0");
             document.getElementById("navbar").style.backgroundColor = "#f1f1f1";
             document.querySelector(".txt-brand").classList.add("fs-4");
-            document.querySelector(".txt-brand").classList.remove("text-white");
+            document.querySelector(".txt-brand").classList.remove("text-primary");
             navLink.forEach((e)=>{e.classList.remove("text-white");});
             
           } else {
@@ -50,7 +50,7 @@
             document.getElementById("navContainer").classList.add("mt-5");
             document.getElementById("nav-link").classList.add("text-white");
             document.querySelector(".txt-brand").classList.remove("fs-4");
-            document.querySelector(".txt-brand").classList.add("text-white");
+            document.querySelector(".txt-brand").classList.add("text-primary");
             document.getElementById("navbar").style.removeProperty("background-color");
             navLink.forEach((element) => {
               element.classList.add('text-white');

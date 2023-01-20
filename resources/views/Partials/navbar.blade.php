@@ -1,7 +1,7 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top" style="transition: 0.4s">
     <div id="navContainer" class="container-fluid mt-5 justify-content-center" style="transition: 0.4s">
       <div class="d-flex column-gap-5">
-        <a class="navbar-brand" href="/"><h2 class="txt-brand text-white" style="transition: 0.4s">{{ env('APP_NAME') }}</h2></a>
+        <a class="navbar-brand" href="/"><h2 class="txt-brand text-primary" style="transition: 0.4s">{{ env('APP_NAME') }}</h2></a>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll column-gap-3" style="--bs-scroll-height: 50vh;">
             <li class="nav-item">
