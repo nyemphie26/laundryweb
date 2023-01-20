@@ -17,6 +17,9 @@ use Illuminate\Support\Facades\Artisan;
 Route::get('/', function () {
     return view('homepage');
 });
+Route::get('/contact', function () {
+    return view('pages.contact');
+});
 
 Route::get('migrate',function(){
     Artisan::call('migrate', ['--force' => true]);
