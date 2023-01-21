@@ -18,10 +18,10 @@ Route::get('/', function () {
     return view('homepage');
 });
 Route::get('/contact', function () {
-    return view('pages.contact');
+    return view('Pages.contact');
 });
 Route::get('/about', function () {
-    return view('pages.about');
+    return view('Pages.about');
 });
 
 Route::get('/service/{slug}', [App\Http\Controllers\ServicePage::class, 'index']);
