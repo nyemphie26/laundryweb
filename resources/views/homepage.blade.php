@@ -5,7 +5,8 @@
 <div class="header" style="background-image: url('{{ asset('assets/images/1.jpg') }}')">
     <div class="row justify-content-center min-vh-100 align-items-center">
         <div class="col-md-6 text-center text-white">
-            <h1 class="mb-5">Your Laundry Partner In Crime</h1>
+            <h1 class="mb-4">Your Laundry Partner In Crime</h1>
+            <h2 class="text-primary mb-4">{{ env('APP_NAME') }}</h2>
             <p class="mb-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, pariatur.</p>
             <button class="btn btn-primary btn-lg">Get Started</button>
         </div>
@@ -17,7 +18,7 @@
         <button class="btn btn-light btn-lg">Face Mask</button>
     </div>
 </div>
-<div class="parallax align-items-center d-grid vh-100" style="background-image: url('{{ asset('assets/images/2.jpg') }}')">
+<div class="parallax mask align-items-center d-grid vh-100" style="background-image: url('{{ asset('assets/images/2.jpg') }}')">
     <div class="row justify-content-center">
         <div class="col-md-6 text-center text-white">
             <h2 class="reveal rev-bottom mb-4">Never do Laundry Again, you have better things to do!</h2>
@@ -54,7 +55,7 @@
         <button class="btn btn-outline-light btn-lg">Learn More how to order</button>
     </div>
 </div>
-<div class="parallax d-grid align-items-center vh-75" style="background-image: url('{{ asset('assets/images/3.jpg') }}')">
+<div class="parallax mask d-grid align-items-center vh-75" style="background-image: url('{{ asset('assets/images/3.jpg') }}')">
     <div class="row justify-content-center ">
         <div class="col-md-10 text-center text-white ">
             <h2 class="reveal rev-bottom mb-4">Wedding Gown, Cleaning and Finishing</h2>
@@ -118,25 +119,6 @@
             <p class="text-secondary">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore, nostrum.</p>
             <button type="button" class="btn btn-link text-secondary">Click here </button>
         </div>
-    </div>
-</div>
-<div class="section footer d-grid bg-dark align-items-center" style="height: 20vh">
-    <div class="d-flex justify-content-center text-center column-gap-3">
-        <a href="#">
-            <div class="social-box bg-primary">
-                <i class="fa-brands fa-facebook-f" style="color: white"></i>
-            </div>
-        </a>
-        <a href="#">
-            <div class="social-box bg-primary">
-                <i class="fa-brands fa-twitter" style="color: white"></i>
-            </div>
-        </a>
-        <a href="#">
-            <div class="social-box bg-primary">
-                <i class="fa-brands fa-instagram" style="color: white"></i>
-            </div>
-        </a>
     </div>
 </div>
 @endsection

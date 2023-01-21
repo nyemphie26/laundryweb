@@ -20,6 +20,11 @@ Route::get('/', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+Route::get('/about', function () {
+    return view('pages.about');
+});
+
+Route::get('/service/{slug}', [App\Http\Controllers\ServicePage::class, 'index']);
 
 Route::get('migrate',function(){
     Artisan::call('migrate', ['--force' => true]);

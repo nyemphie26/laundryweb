@@ -19,6 +19,26 @@
     <div class="section" style="display: none">
       @include('Partials.navbar')
       @yield('content')
+
+      <div class="section footer d-grid bg-dark align-items-center" style="height: 20vh">
+        <div class="d-flex justify-content-center text-center column-gap-3">
+            <a href="#">
+                <div class="social-box bg-primary">
+                    <i class="fa-brands fa-facebook-f" style="color: white"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social-box bg-primary">
+                    <i class="fa-brands fa-twitter" style="color: white"></i>
+                </div>
+            </a>
+            <a href="#">
+                <div class="social-box bg-primary">
+                    <i class="fa-brands fa-instagram" style="color: white"></i>
+                </div>
+            </a>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script>

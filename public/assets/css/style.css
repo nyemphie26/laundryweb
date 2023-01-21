@@ -30,6 +30,15 @@
     background-size: cover;
     width: 100%;
     height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(1, 1, 1, 0.5);
+}
+
+.mask{
+    box-shadow: inset 0 0 0 2000px rgba(1, 1, 1, 0.5);
+}
+
+.container-mask{
+    box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.960);
 }
 
 .sectionBanner{

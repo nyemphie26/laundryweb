@@ -5,24 +5,24 @@
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll column-gap-3" style="--bs-scroll-height: 50vh;">
             <li class="nav-item">
-              <a id="nav-link" class="nav-link text-white active" aria-current="page" href="#">Organic Dry Cleaning</a>
+              <a id="nav-link" class="nav-link text-white active" aria-current="page" href="/service/organic-dry-cleaning">Organic Dry Cleaning</a>
             </li>
             <li class="nav-item dropdown">
               <a id="nav-link" class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Services
               </a>
               <ul class="dropdown-menu text-white">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="/service/wash,-dry,-and-fold">Wash, Dry, and Fold</a></li>
+                <li><a class="dropdown-item" href="/service/bed-and-linen">Bed and Linen</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="/service/ironing">Ironing</a></li>
               </ul>
             </li>
             <li class="nav-item">
               <a id="nav-link" class="nav-link text-white">Pricing</a>
             </li>
             <li class="nav-item">
-              <a id="nav-link" class="nav-link text-white">About</a>
+              <a id="nav-link" class="nav-link text-white" href="/about">About</a>
             </li>
             <li class="nav-item">
               <a id="nav-link" class="nav-link text-white" href="/contact">Contact Us</a>
