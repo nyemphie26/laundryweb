@@ -12,12 +12,6 @@
         </div>
     </div>
 </div>
-<div class="sectionBanner row justify-content-center align-items-center" style="height:25vh">
-    <div class="col-md-9 text-center text-white">
-        <h2 class="reveal rev-bottom mb-4">Hand made face masks available</h2>
-        <button class="btn btn-light btn-lg">Face Mask</button>
-    </div>
-</div>
 <div class="parallax mask align-items-center d-grid vh-100" style="background-image: url('{{ asset('assets/images/2.jpg') }}')">
     <div class="row justify-content-center">
         <div class="col-md-6 text-center text-white">
@@ -47,7 +41,7 @@
 </div>
 <div class="sectionBanner row justify-content-center align-items-center py-5">
     <div class="col-md-5 text-end">
-        <img src="{{ asset('assets/images/laundry.png') }}" class="reveal rev-left img-fluid" alt="{{ env('APP_NAME') }}">
+        <img src="{{ asset('assets/images/suit5.jpg') }}" class="reveal rev-left img-fluid" alt="{{ env('APP_NAME') }}">
     </div>
     <div class="col-md-5 ">
         <h2 class="reveal rev-right mb-4">Proudly Present To You</h2>
