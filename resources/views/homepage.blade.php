@@ -41,7 +41,7 @@
 </div>
 <div class="sectionBanner row justify-content-center align-items-center py-5">
     <div class="col-md-5 text-end">
-        <img src="{{ asset('assets/images/suit5.jpg') }}" class="reveal rev-left img-fluid" alt="{{ env('APP_NAME') }}">
+        <img src="{{ asset('assets/images/Suit5.jpg') }}" class="reveal rev-left img-fluid" alt="{{ env('APP_NAME') }}">
     </div>
     <div class="col-md-5 ">
         <h2 class="reveal rev-right mb-4">Proudly Present To You</h2>
