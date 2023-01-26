@@ -49,7 +49,7 @@
         <button class="btn btn-outline-light btn-lg">Learn More how to order</button>
     </div>
 </div>
-<div class="parallax mask d-grid align-items-center vh-75" style="background-image: url('{{ asset('assets/images/3.jpg') }}')">
+<div class="parallax mask d-grid align-items-center vh-75" style="background-image: url('{{ asset('assets/images/Gown3.jpg') }}')">
     <div class="row justify-content-center ">
         <div class="col-md-10 text-center text-white ">
             <h2 class="reveal rev-bottom mb-4">Wedding Gown, Cleaning and Finishing</h2>
