@@ -11,6 +11,13 @@ class ServicePage extends Controller
         $slug = $request->slug;
         $test = implode('-', array_map('ucfirst', explode('-', $slug)));
         $title = str_replace('-',' ',$test);
-        return view('Pages.service', compact('title'));
+        $image = null;
+
+        if($slug == 'wash,-dry,-and-fold')
+        {
+            $image = 'assets/images/wash_basket.jpg';
+        }
+        
+        return view('Pages.service', compact('title', 'image'));
     }
 }

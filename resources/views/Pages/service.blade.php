@@ -15,7 +15,11 @@
         <br>
     </div>
     <div class="col text-center my-auto">
-        <h1>Picture</h1>
+        @if ($image == null)
+            <h1>Picture</h1>
+        @else
+            <img src="{{ asset($image) }}" alt="" srcset="">
+        @endif
     </div>
 </div>
 @endsection
