@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
 
@@ -14,14 +15,15 @@ use Illuminate\Support\Facades\Artisan;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage');
-});
+Route::get('/', [HomeController::class, 'index']);
+
 Route::get('/contact', function () {
-    return view('Pages.contact');
+    $titleImg = 'assets/images/1.jpg';
+    return view('Pages.contact', compact('titleImg'));
 });
 Route::get('/about', function () {
-    return view('Pages.about');
+    $titleImg = 'assets/images/1.jpg';
+    return view('Pages.about', compact('titleImg'));
 });
 
 Route::get('/service/{slug}', [App\Http\Controllers\ServicePage::class, 'index']);

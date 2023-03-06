@@ -12,10 +12,15 @@
                 Services
               </a>
               <ul class="dropdown-menu text-white">
-                <li><a class="dropdown-item" href="/service/wash,-dry,-and-fold">Wash, Dry, and Fold</a></li>
+                @foreach ($categories as $category)
+                  @if ($category->variants->isNotEmpty())
+                  <li><a class="dropdown-item" href="/service/{{ $category->slug }}">{{ $category->name }}</a></li>
+                  @endif
+                @endforeach
+                {{-- <li><a class="dropdown-item" href="/service/wash,-dry,-and-fold">Wash, Dry, and Fold</a></li>
                 <li><a class="dropdown-item" href="/service/bed-and-linen">Bed and Linen</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="/service/ironing">Ironing</a></li>
+                <li><a class="dropdown-item" href="/service/ironing">Ironing</a></li> --}}
               </ul>
             </li>
             <li class="nav-item">

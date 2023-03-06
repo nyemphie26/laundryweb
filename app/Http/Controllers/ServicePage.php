@@ -14,7 +14,9 @@ class ServicePage extends Controller
         $titleImg = 'assets/images/1.jpg';
         $image = null;
 
-        if($slug == 'wash,-dry,-and-fold')
+        // return $title;
+
+        if($slug == 'Dry-Cleanings')
         {
             $titleImg = 'assets/images/3.jpg';
             $image = 'assets/images/wash_basket.jpg';
