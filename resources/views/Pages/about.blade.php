@@ -51,7 +51,7 @@
             console.log('load');
         }
         function getData() {
-            var link = 'http://laundry-admin.test/api/v2/about-page';
+            var link = `${baseUrl}/api/v2/about-page`;
             fetch(link,{
                 method:'get'
                 })

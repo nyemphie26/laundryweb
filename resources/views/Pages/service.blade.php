@@ -27,7 +27,6 @@
         function getData() {
             const currentPath = window.location.pathname;
             slug = getSlugFromUrl(currentPath);
-            var baseUrl = "{{ env('APP_SERVER_API') }}";
             var link = `${baseUrl}/api/v2/service-page/Service_${slug}`;
             fetch(link,{
                 method:'get'

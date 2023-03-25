@@ -115,7 +115,7 @@
 @section('page-script')
     <script>
         function getData() {
-            var link = 'http://laundry-admin.test/api/v2/landing-page';
+            var link = `${baseUrl}/api/v2/landing-page`;
             fetch(link,{
                 method:'get'
                 })
