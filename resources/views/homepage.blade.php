@@ -8,7 +8,7 @@
             <h1 class="mb-4" id="Header_title">Your Laundry Partner In Crime</h1>
             <h2 class="text-primary mb-4">{{ env('APP_NAME') }}</h2>
             <p class="mb-5" id="Header_subTitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, pariatur.</p>
-            <button class="btn btn-primary btn-lg">Get Started</button>
+            <button class="btn btn-primary btn-lg" onclick="smoothScroll('#Steps_section')">Get Started</button>
         </div>
     </div>
 </div>
@@ -35,7 +35,7 @@
     <div class="row justify-content-center center">
         <div class="col-md-9 text-center text-white">
             <h2 class="mb-4" id="Steps_subTitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</h2>
-            <button class="btn btn-primary btn-lg">Register Now</button>
+            <a href="{{ env('APP_BOOKINGS_URL') }}" class="btn btn-primary btn-lg">Register Now</a>
         </div>
     </div>
 </div>
@@ -46,7 +46,7 @@
     <div class="col-md-5 ">
         <h2 class="reveal rev-right mb-4" id="Greetings_title">Proudly Present To You</h2>
         <p id="Greetings_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum, dolorem animi incidunt modi, illo excepturi doloremque, quis illum nulla aliquid molestiae. Natus praesentium, incidunt temporibus minus accusamus at corrupti illo voluptatum veniam quidem? Velit aut, laboriosam laudantium ducimus cumque doloribus excepturi! Accusamus, minima temporibus?</p>
-        <button class="btn btn-outline-light btn-lg">Learn More how to order</button>
+        <button class="btn btn-outline-light btn-lg" onclick="smoothScroll('#Steps_section')">Learn More how to order</button>
     </div>
 </div>
 <div class="parallax mask d-grid align-items-center vh-75" style="background-image: url('{{ asset('assets/images/Gown3.jpg') }}')" id="Highlight_section">
