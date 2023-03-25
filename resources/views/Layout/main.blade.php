@@ -45,16 +45,32 @@
       
         window.onscroll = function() {scrollFunction()};
         window.addEventListener('scroll', reveal);
-        window.addEventListener('load', loading);
+        window.addEventListener('load', function() {
+          loadServices();
+          getData();
+        });
         
-        function loading() {
-          setTimeout(() => {
-            document.querySelector(".loader").classList.remove("loader-active");
-            document.querySelector(".section").style.display = "block";
-          }, 1000);
+        function loadServices() {
+          var link = 'http://laundry-admin.test/api/v1/categories';
+            fetch(link,{
+                method:'get'
+                })
+                .then(res=>res.json())
+                .then(data=>{
+                    const list = document.getElementById('categoriesList');
+                    data['data'].forEach(item => {
+                      const li = document.createElement('li');
+                      const a = document.createElement('a');
+                      a.href = '/service/'+item['slug'];
+                      a.classList = 'dropdown-item';
+                      a.textContent = item['category'];
+                      li.appendChild(a);
+                      list.appendChild(li);
+                    });
+                })
+                .catch(err=>console.log(err))
         }
-        
-        
+               
         function scrollFunction() {
           const navLink = document.querySelectorAll('.nav-link');
 
@@ -95,6 +111,7 @@
             }
           }
         }
-    </script>
+      </script>
+      @yield('page-script')
   </body>
 </html>

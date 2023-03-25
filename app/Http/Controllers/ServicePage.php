@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class ServicePage extends Controller
 {
@@ -14,14 +16,33 @@ class ServicePage extends Controller
         $titleImg = 'assets/images/1.jpg';
         $image = null;
 
-        // return $title;
+        $contentData = $this->fetchDataFromApi($slug);
 
-        if($slug == 'Dry-Cleanings')
-        {
-            $titleImg = 'assets/images/3.jpg';
-            $image = 'assets/images/wash_basket.jpg';
-        }
+        // return $contentData;
+
+        // if($slug == 'Dry-Cleanings')
+        // {
+        //     $titleImg = 'assets/images/3.jpg';
+        //     $image = 'assets/images/wash_basket.jpg';
+        // }
         
-        return view('Pages.service', compact('title', 'titleImg', 'image'));
+        return view('Pages.service', compact('title', 'titleImg', 'image','contentData'));
+    }
+
+    public function fetchDataFromApi($slug)
+    {
+        $baseUrl = env('APP_SERVER_API');
+        $fetchUrl = "$baseUrl/api/v1/category/$slug";
+
+        $client = new Client();
+        $response = $client->get($fetchUrl);
+        
+        if ($response->getStatusCode() == 200) {
+            $data = json_decode($response->getBody(), true);
+            // Do something with the data
+            return $data['data']['services'];
+        } else {
+            abort($response->getStatusCode());
+        }
     }
 }
