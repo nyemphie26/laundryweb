@@ -3,14 +3,11 @@
 namespace App\Http\Controllers;
 
 use GuzzleHttp\Client;
-use App\Models\Category;
-use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        // $categories = Category::with(['services','variants'])->get();
         $services = $this->fetchDataFromApi();
         return view('homepage', compact('services'));
     }

@@ -24,8 +24,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        view()->composer('Partials.navbar', function($view){
-            view()->share('categories', Category::with(['services','variants'])->get());
-        });
+        // view()->composer('Partials.navbar', function($view){
+        //     view()->share('categories', Category::with(['services','variants'])->get());
+        // });
     }
 }
