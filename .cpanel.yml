@@ -1,8 +1,8 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/codj2387/
-    - /bin/cp -r * $DEPLOYPATH/laundryweb #copy all from root
+    - export DEPLOYPATH=/home4/washpres/
+    - /bin/cp -r * $DEPLOYPATH/landing #copy all from root
     - /bin/cp -r ./public/* $DEPLOYPATH/public_html
     # - /bin/cp ./public/js/*.js $DEPLOYPATH/public_html/welikework.codignore.com/js
     # - /bin/cp ./public/css/*.css $DEPLOYPATH/public_html/welikework.codignore.com/css
