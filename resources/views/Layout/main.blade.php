@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{-- <title>{{ env('APP_NAME') }}</title> --}}
-    <title>update v1</title>
+    <title>update v2</title>
     {{-- Fonts Family --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
