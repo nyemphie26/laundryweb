@@ -38,6 +38,14 @@
                 </div>
             </a>
         </div>
+        <div class="d-flex justify-content-center text-center column-gap-3 m-0">
+          <a href="/privacy-policy">
+            <span class="text-xs">Privacy Policy</span>
+          </a>
+          {{-- <a href="/term-condition">
+            <span class="text-xs">Term and Condition</span>
+          </a> --}}
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

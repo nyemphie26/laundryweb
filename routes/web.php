@@ -26,6 +26,15 @@ Route::get('/about', function () {
     return view('Pages.about', compact('titleImg'));
 });
 
+Route::get('/privacy-policy', function () {
+    $titleImg = 'assets/images/1.jpg';
+    return view('Pages.privacy', compact('titleImg'));
+});
+// Route::get('/term-condition', function () {
+//     $titleImg = 'assets/images/1.jpg';
+//     return view('Pages.term', compact('titleImg'));
+// });
+
 Route::get('/service/{slug}', [App\Http\Controllers\ServicePage::class, 'index']);
 
 Route::get('migrate',function(){
