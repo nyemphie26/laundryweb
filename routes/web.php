@@ -30,6 +30,10 @@ Route::get('/privacy-policy', function () {
     $titleImg = 'assets/images/1.jpg';
     return view('Pages.privacy', compact('titleImg'));
 });
+Route::get('/data-deletion', function () {
+    $titleImg = 'assets/images/1.jpg';
+    return view('Pages.deletion', compact('titleImg'));
+});
 // Route::get('/term-condition', function () {
 //     $titleImg = 'assets/images/1.jpg';
 //     return view('Pages.term', compact('titleImg'));
