@@ -4,9 +4,9 @@
         <a class="navbar-brand" href="/"><h2 class="txt-brand text-primary" style="transition: 0.4s">{{ env('APP_NAME') }}</h2></a>
         <div class="collapse navbar-collapse" id="navbarScroll">
           <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll column-gap-3" style="--bs-scroll-height: 50vh;">
-            {{-- <li class="nav-item">
-              <a id="nav-link" class="nav-link text-white active" aria-current="page" href="/service/organic-dry-cleaning">Organic Dry Cleaning</a>
-            </li> --}}
+            <li class="nav-item">
+              <a id="nav-link" class="nav-link text-white active" aria-current="page" href="/service/Organic-Dry-Cleaning">Organic Dry Cleaning</a>
+            </li>
             <li class="nav-item dropdown">
               <a id="nav-link" class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Services
@@ -14,9 +14,9 @@
               <ul class="dropdown-menu text-white" id="categoriesList">
               </ul>
             </li>
-            {{-- <li class="nav-item">
-              <a id="nav-link" class="nav-link text-white">Pricing</a>
-            </li> --}}
+            <li class="nav-item">
+              <a id="nav-link" class="nav-link text-white" href="/pricing">Pricing</a>
+            </li>
             <li class="nav-item">
               <a id="nav-link" class="nav-link text-white" href="/about">About</a>
             </li>

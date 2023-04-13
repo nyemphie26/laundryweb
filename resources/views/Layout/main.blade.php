@@ -22,17 +22,17 @@
 
       <div class="section footer d-grid bg-dark align-items-center" style="height: 20vh">
         <div class="d-flex justify-content-center text-center column-gap-3">
-            <a href="#">
+            <a href="#" id="soc_fb" target="_blank" style="display: none">
                 <div class="social-box bg-primary">
                     <i class="fa-brands fa-facebook-f" style="color: white"></i>
                 </div>
             </a>
-            <a href="#">
+            <a href="#" id="soc_tw" target="_blank" style="display: none">
                 <div class="social-box bg-primary">
                     <i class="fa-brands fa-twitter" style="color: white"></i>
                 </div>
             </a>
-            <a href="#">
+            <a href="#" id="soc_ig" target="_blank" style="display: none">
                 <div class="social-box bg-primary">
                     <i class="fa-brands fa-instagram" style="color: white"></i>
                 </div>
@@ -58,6 +58,7 @@
         window.addEventListener('load', function() {
           loadServices();
           getData();
+          loadFooter();
         });
         
         function loadServices() {
@@ -77,6 +78,30 @@
                       li.appendChild(a);
                       list.appendChild(li);
                     });
+                })
+                .catch(err=>console.log(err))
+        }
+
+        function loadFooter() {
+          var link = `${baseUrl}/api/v2/footer`;
+            fetch(link,{
+                method:'get'
+                })
+                .then(res=>res.json())
+                .then(data=>{
+                  if (data['Social_facebook'] != null) {
+                    document.getElementById('soc_fb').style.display = "block";
+                    document.getElementById('soc_fb').setAttribute("href", data['Social_facebook'])
+                  }
+                  if (data['Social_twitter'] != null) {
+                    document.getElementById('soc_tw').style.display = "block";
+                    document.getElementById('soc_tw').setAttribute("href", data['Social_twitter'])
+                  }
+                  if (data['Social_instagram'] != null) {
+                    document.getElementById('soc_ig').style.display = "block";
+                    document.getElementById('soc_ig').setAttribute("href", data['Social_instagram'])
+                  }
+                    
                 })
                 .catch(err=>console.log(err))
         }

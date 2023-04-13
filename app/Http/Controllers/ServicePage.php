@@ -16,17 +16,14 @@ class ServicePage extends Controller
         $titleImg = 'assets/images/1.jpg';
         $image = null;
 
-        $contentData = $this->fetchDataFromApi($slug);
-
-        // return $contentData;
-
-        // if($slug == 'Dry-Cleanings')
-        // {
-        //     $titleImg = 'assets/images/3.jpg';
-        //     $image = 'assets/images/wash_basket.jpg';
-        // }
-        
-        return view('Pages.service', compact('title', 'titleImg', 'image','contentData'));
+        if($slug == 'Organic-Dry-Cleaning')
+        {
+            return view('Pages.specialpage', compact('title', 'titleImg', 'image'));
+        }
+        else {
+            $contentData = $this->fetchDataFromApi($slug);
+            return view('Pages.service', compact('title', 'titleImg', 'image','contentData'));
+        }
     }
 
     public function fetchDataFromApi($slug)
